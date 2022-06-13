@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Autos {
+           constructor (mar,mod,año,cant){
+                this.marca=mar;
+                this.modelo=mod;
+                this.año=año;
+                this.cantidad=cant;
+            }
+            acelerar () {
+                console.log ('Acelerando....')
+            }
+
+            subirVidrios () {
+                console.log('Subiendo vidrios')
+            }
+    
+        }
+   
+
+
+        class Autogas extends Autos {
+              acelerar () {
+                console.log('Acelerando a gas')
+            }
+        }
+        class Autonafta extends Autos {
+              acelerar () {
+                console.log('Acelerando a nafta')
+            }
+        }
+        class Autoeléctrico extends Autos {
+              acelerar (){
+                console.log('Acelerando a eléctricidad')
+            }
+        }
+
+    const a1 = new Autogas()
+    const a2 = new Autonafta()
+    const a3 = new Autoeléctrico()
+
+    </script>
+</body>
+</html>
